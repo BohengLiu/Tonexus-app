@@ -1,7 +1,8 @@
 export default function Slide9() {
   return (
-    <div className="w-full flex flex-col items-center text-white space-y-64">
+    <div className="w-full flex flex-col items-center text-white space-y-64 font-light pt-[142px]">
       <div className="flex items-center space-x-[124px]">
+        
         <img src="/type1.svg" />
         <div className="flex flex-col">
           <h3 className="text-[36px]">TYPE I:10^16</h3>
