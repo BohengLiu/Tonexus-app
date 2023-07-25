@@ -5,8 +5,8 @@ import { CompositionShader} from './shaders/CompositionShader'
 import { BASE_LAYER, BLOOM_LAYER, BLOOM_PARAMS, OVERLAY_LAYER } from "./config/renderConfig";
 
 // Rendering
-import { MapControls } from 'three/addons/controls/MapControls.js'
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+// import { MapControls } from 'three/addons/controls/MapControls.js'
+// import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 
 import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
@@ -158,8 +158,8 @@ export class Controller {
     const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
     // 根据鼠标的位置调整alpha和beta的值
-    this.alphaDel = mouseX * 2; // 你可以根据需要调整这个值
-    this.betaDel = mouseY * 2; // 你可以根据需要调整这个值
+    this.alphaDel = mouseX * 5; // 你可以根据需要调整这个值
+    this.betaDel = mouseY * 5; // 你可以根据需要调整这个值
   }
 
   getTargetPositon() {
@@ -181,7 +181,7 @@ export class Controller {
       this.distance = Math.max(this.MIN_DISTANCE, this.distanceSetFn()) 
     }
 
-    this.alpha = this.rotationSpeed * Date.now()
+    this.alpha = -this.rotationSpeed * Date.now()
     const {x, y, z} = this.getTargetPositon()
 
     // 更新摄像机位置

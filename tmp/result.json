@@ -1,0 +1,23 @@
+{
+  "Code": "Succeed",
+  "Data": [
+      {
+          "Count": 18,
+          "Destination": "-1:16d6f0a9035b6bf71afa4125d2c5c552767d529bb4985ff3c259074295a5a16a",
+          "InTxCount": 18,
+          "OutTxCount": 18,
+          "Source": "0:a44757069a7b04e393782b4a2d3e5e449f19d16a4986a9e25436e6b97e45a16a",
+          "TotalValue": "64923147.252071390000"
+      },
+      {
+          "Count": 18,
+          "Destination": "-1:16d6f0a9035b6bf71afa4125d2c5c552767d529bb4985ff3c259074295a5a16a",
+          "InTxCount": 18,
+          "OutTxCount": 18,
+          "Source": "-1:3333333333333333333333333333333333333333333333333333333333333333",
+          "TotalValue": "64913228.659641130000"
+      }
+  ],
+  "Message": "Succeed",
+  "RequestId": "95f1af4d-6c35-4f48-8032-e517608a1d80"
+}

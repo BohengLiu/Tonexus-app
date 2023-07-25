@@ -1,11 +1,19 @@
-import Image from 'next/image'
 // import Wormhole from './Wormhole'
-import GalaxyCanvans, { Controller } from './Galaxy'
+import AppHeader from "@/components/AppHeader";
+import GalaxyCanvans from "./Galaxy";
+import Content from "./home/Content";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <GalaxyCanvans />
-    </main>
-  )
+    <>
+      <AppHeader  />
+      <main
+        className="h-screen overflow-auto relative"
+        style={{ perspective: "100px" }}
+      >
+        <GalaxyCanvans />
+        <Content />
+      </main>
+    </>
+  );
 }
