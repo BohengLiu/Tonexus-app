@@ -119,7 +119,7 @@ export default function Slide8() {
           }}
         />
         <span
-          className="absolute left-[50%] bottom-[50%] translate-x-[340px] translate-y-[16px] text-white text-white/60 whitespace-nowrap"
+          className="absolute left-[50%] bottom-[50%] translate-x-[340px] translate-y-[16px] text-[24px] text-white/60 whitespace-nowrap"
           style={{
             opacity: isStage1 ? 0 : 60,
             transitionDuration: "4000ms",
