@@ -61,7 +61,7 @@ export default function Slide5() {
   }, []);
 
   return (
-    <div className="w-full relative flex flex-col items-center">
+    <div className="mt-[200px] w-full relative flex flex-col items-center ">
       <div className="w-full max-w-[1244px] relative flex justify-center">
         <img
           ref={leftHandRef}
@@ -83,6 +83,7 @@ export default function Slide5() {
             transform: isShow ? "scale(1)" : "scale(0)",
             transitionDuration: "3000ms",
           }}
+          alt="core"
         />
         <img
           ref={rightHandRef}
@@ -94,6 +95,7 @@ export default function Slide5() {
               : "translate(0px, 100px)",
             transitionDuration: "1500ms",
           }}
+          alt="left-hand"
         />
       </div>
       <div className="absolute -bottom-[110px] text-white w-full max-w-[1244px]">

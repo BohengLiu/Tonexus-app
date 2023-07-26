@@ -29,7 +29,7 @@ export class Controller {
   galaxy: Galaxy
   rotationSpeed = 0.003;
 
-  MIN_DISTANCE = 700
+  MIN_DISTANCE = 400
   distance = 50000;
   distanceDif = 0
 

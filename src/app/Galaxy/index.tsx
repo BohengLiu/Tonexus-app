@@ -47,7 +47,7 @@ export default function GalaxyCanvans() {
     if (controllerRef.current) {
       controllerRef.current.distanceSetFn = genDistanceSetFn(
         controllerRef.current.distance,
-        1000,
+        600,
         1500
       );
       setTimeout(() => {
@@ -78,6 +78,10 @@ export default function GalaxyCanvans() {
     handleShowWord();
     // setIsShowGalaxy(true);
   }, []);
+
+  const startScroll = useCallback(() => {
+    (document.querySelector('#main') as HTMLDivElement).style.overflowY = 'auto'
+  }, [])
 
   return (
     <div className="w-full h-full relative">
@@ -165,7 +169,7 @@ export default function GalaxyCanvans() {
           width="1000"
           height="1000"
         ></canvas>
-        <Logo isAnimateStart={isLogoAnimation} />
+        <Logo isAnimateStart={isLogoAnimation} onAimateEnd={startScroll} />
       </div>
 
       {/* Debug Panel */}

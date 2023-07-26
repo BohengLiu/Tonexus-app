@@ -2,17 +2,20 @@
 import AppHeader from "@/components/AppHeader";
 import GalaxyCanvans from "./Galaxy";
 import Content from "./home/Content";
+import AppFooter from "@/components/AppFooter";
 
 export default function Home() {
   return (
     <>
       <AppHeader  />
       <main
-        className="h-screen overflow-auto relative"
+        id="main"
+        className="h-screen overflow-y-hidden relative"
         style={{ perspective: "100px" }}
       >
         <GalaxyCanvans />
         <Content />
+        <AppFooter />
       </main>
     </>
   );

@@ -15,13 +15,11 @@ export default function RoadMap() {
       containerRef.current.parentNode.addEventListener("scroll", (e) => {
         if (containerRef.current?.parentNode) {
           const distance = (containerRef.current.parentNode as HTMLDivElement).scrollTop - (containerRef.current as HTMLDivElement).offsetTop
-          console.log((containerRef.current.parentNode as HTMLDivElement).scrollTop, (containerRef.current as HTMLDivElement).offsetTop)
           const h = Math.max(0, distance  + 400)
           if (progressBarRef.current) {
             progressBarRef.current.style.height = `${h}px`
           }
         }
-        
       }, false)
     }
   }, [])
