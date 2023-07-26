@@ -46,7 +46,7 @@ export default function Slide8() {
 
 
   return (
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center bg-black">
       <h2 className="text-[60px] text-center text-white font-light pb-[90px]">Digital Contract</h2>
       <div ref={containerRef} className="relative text-white font-light">
         <img

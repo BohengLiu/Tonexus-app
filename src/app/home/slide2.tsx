@@ -46,7 +46,6 @@ export default function Slide2() {
   const observerFn = useCallback(
     (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
       entries.forEach((entry) => {
-        console.log(entry.intersectionRatio);
         if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
           // 目标元素进入视窗
           setIsContent1Show(true);

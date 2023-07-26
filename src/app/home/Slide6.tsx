@@ -20,7 +20,7 @@ export default function Slide6() {
   }, []);
   return (
     <div
-      className="w-screen h-[85vw] relative"
+      className="w-screen h-[85vw] relative bg-black"
       style={{ transformStyle: "preserve-3d", perspectiveOrigin: "100% 50%" }}
     >
       <img

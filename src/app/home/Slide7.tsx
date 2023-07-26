@@ -1,6 +1,6 @@
 export default function Slide7() {
   return (
-    <div className="w-full py-[250px] flex flex-col items-center">
+    <div className="w-full py-[250px] flex flex-col items-center bg-black z-10">
       <div className="flex justify-center space-x-[90px] relative">
         <img src="/protect-right.svg" alt="protect-right" />
         <img src="/brick.svg" alt="brick" className="absolute top-[344px] left-[100px]" />

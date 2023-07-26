@@ -32,7 +32,7 @@ export default function Slide4() {
   return (
     <div
       ref={containerRef}
-      className="w-full flex flex-col relative min-h-[1100px]"
+      className="w-full flex flex-col relative min-h-[1100px] bg-black"
       style={{ transformStyle: "preserve-3d", perspectiveOrigin: "100% 50%" }}
     >
       <img

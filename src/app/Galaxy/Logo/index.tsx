@@ -30,7 +30,7 @@ export default function Logo({ isAnimateStart, onAimateEnd }: LogoProps) {
     }
   }, [isAnimateStart, onAimateEnd]);
   return (
-    <div className="absolute inset-0 bg-black/50 flex justify-center items-center">
+    <div className="absolute inset-0 bg-black/70 flex justify-center items-center">
       <div className="relative">
         <video
           width={484}

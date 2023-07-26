@@ -14,7 +14,6 @@ export default function Slide5() {
     const mouseX = (event.clientX / window.innerWidth) * 2 - 1;
     const mouseY = -(event.clientY / window.innerHeight) * 2 + 1;
 
-    console.log(mouseX, mouseY);
 
     if (leftHandRef.current) {
       let ty = -mouseY * 50;
@@ -42,13 +41,12 @@ export default function Slide5() {
           setIsShow(true);
           window.addEventListener("mousemove", onMouseMove, false);
         } else if (entry.intersectionRatio < 0.1) {
-          console.log(entry.intersectionRatio);
           window.removeEventListener("mousemove", onMouseMove);
           setIsShow(false);
         }
       });
     },
-    []
+    [onMouseMove]
   );
 
   useEffect(() => {
@@ -58,10 +56,10 @@ export default function Slide5() {
     if (coreRef.current) {
       observerRef.current.observe(coreRef.current);
     }
-  }, []);
+  }, [observerFn]);
 
   return (
-    <div className="mt-[200px] w-full relative flex flex-col items-center ">
+    <div className="pt-[200px] w-full relative flex flex-col items-center bg-black">
       <div className="w-full max-w-[1244px] relative flex justify-center">
         <img
           ref={leftHandRef}

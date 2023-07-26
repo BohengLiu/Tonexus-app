@@ -11,7 +11,7 @@ const roboto_mono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "TONexus",
-  description: "Social Netword on Ton",
+  description: "The first social layer protocol network on Ton for humans ",
 };
 
 export default function RootLayout({
