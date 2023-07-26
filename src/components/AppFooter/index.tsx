@@ -5,7 +5,7 @@ export default function AppFooter() {
       <div className="flex items-center">
         <span className="text-[#808080]">Powered by Ton & Chainbase </span>
         <img src="/ton-logo.svg" alt="ton" className="mx-6" />
-        <img src="/chainbase-logo.svg" alt="chainbase" />
+        <a href="https://chainbase.com" target="_blank"><img src="/chainbase-logo.svg" alt="chainbase" /></a>
       </div>
     </div>
   )

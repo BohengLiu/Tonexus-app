@@ -1,20 +1,20 @@
-import { Fragment } from 'react';
-import { Dialog, Transition } from '@headlessui/react';
+import { Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 
 type DrawerProps = {
-  title?: string,
-  description?: string,
-  children: React.ReactNode,
-  isOpen: boolean,
- setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
+  title?: string;
+  description?: string;
+  children: React.ReactNode;
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 export default function Drawer({
-  title = '',
-  description = '',
+  title = "",
+  description = "",
   children,
   isOpen,
-  setIsOpen
+  setIsOpen,
 }: DrawerProps) {
   return (
     <Transition show={isOpen} as={Fragment}>
@@ -47,21 +47,18 @@ export default function Drawer({
             leaveTo="translate-x-full"
           >
             <div
-              className={`fixed right-0 h-full flex flex-col justify-between bg-slate-900 z-50
-                          w-full max-w-sm p-6 overflow-hidden text-left
-                          align-middle shadow-xl rounded-l-2xl`}>
-                <div>
-                  <Dialog.Title
-                    className="font-bold text-2xl md:text-4xl text-blue-500"
-                  >
-                    {title}
-                  </Dialog.Title>
-                  <Dialog.Description>{description}</Dialog.Description>
-                  {children}
-                </div>
-                <div className="self-center mt-10">
-                  <button onClick={() => setIsOpen(!isOpen)}>Close</button>
-                </div>
+              className={`fixed right-0 h-full flex flex-col justify-between bg-[#4B4545] z-50
+                          w-full max-w-sm overflow-hidden text-left
+                          align-middle shadow-xl rounded-l-2xl`}
+            >
+              <div>
+                <Dialog.Title className="font-bold text-2xl md:text-4xl text-blue-500">
+                  {title}
+                </Dialog.Title>
+                <Dialog.Description>{description}</Dialog.Description>
+                {children}
+              </div>
+
             </div>
           </Transition.Child>
         </div>

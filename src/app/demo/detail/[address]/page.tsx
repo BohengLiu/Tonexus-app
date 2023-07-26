@@ -8,7 +8,7 @@ export default function WalletDetailPage({
 }) {
   console.log(params);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-screen">
       <Header />
       <GraphViewer id={params.address} />
     </div>

@@ -24,3 +24,11 @@ export const getTransctionByAddress = async (
     TotalValue: item.TotalValue,
   }));
 };
+
+export const getAddressStats = async (addr: string) => {
+  const resp = await fetch(
+    `${baseUrl}/GetAddressStats?Address=${friendlyAddressToRawForm(addr)}`
+  );
+  const data = await resp.json();
+  return data.Data;
+};
