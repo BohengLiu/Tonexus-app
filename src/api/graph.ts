@@ -3,7 +3,7 @@ import {
   rawFormToFriendlyAddress,
 } from "@/utils/formatAddress";
 
-const baseUrl = "http://192.168.110.122:8080";
+const baseUrl = "http://35.230.25.197:8080";
 
 export const getTransctionByAddress = async (
   addr: string,
