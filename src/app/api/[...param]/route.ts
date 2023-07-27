@@ -17,9 +17,10 @@ export async function GET(request: Request) {
         accept: 'application/json',
       },
     })
-
+    
     // 检查响应是否成功
     if (!response.ok) {
+      console.log(targetUrl, JSON.stringify(response.headers), response.body)
       return new Response(response.body, {
         status: response.status,
         headers: {
