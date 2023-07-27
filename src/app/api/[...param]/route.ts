@@ -21,7 +21,7 @@ export async function GET(request: Request) {
     // 检查响应是否成功
     if (!response.ok) {
       console.log(targetUrl, JSON.stringify(response.headers), response.body)
-      return new Response(response.body, {
+      return new Response('Error', {
         status: response.status,
         headers: {
           ...response.headers,
