@@ -22,6 +22,10 @@ export async function GET(request: Request) {
     if (!response.ok) {
       return new Response(response.body, {
         status: response.status,
+        headers: {
+          ...response.headers,
+          "target_url": targetUrl
+        }
       })
     }
 
