@@ -1,4 +1,4 @@
-export const runtime = "edge"
+import fetch from 'node-fetch'
 
 export async function GET(request: Request) {
   // const url = request.url
