@@ -20,7 +20,7 @@ export async function GET(request: Request) {
 
     // 检查响应是否成功
     if (!response.ok) {
-      return new Response('Error', {
+      return new Response(response.body, {
         status: response.status,
       })
     }
